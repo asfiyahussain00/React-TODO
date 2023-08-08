@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 
 function Todo_list() {
   const [activity, setActivity] = useState('');
-  const [listData, setListData] = useState([]); // Initialize listData as an empty array
+  const [listData, setListData] = useState([]); 
 
   function addActivity() {
     setListData((prevListData) => {
-      const updatedList = [...prevListData, activity]; // Add the new activity to the array
+      const updatedList = [...prevListData, activity]; 
       setActivity('');
       console.log(updatedList);
       return updatedList;
